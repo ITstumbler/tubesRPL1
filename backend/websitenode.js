@@ -23,7 +23,7 @@ const con = mysql.createConnection({
     host: "mysql-tubes-rpl-1-109-tubes-rpl-1-109.j.aivencloud.com",
     port: "11713",
     user: "avnadmin",
-    password: "AVNS_gGJ6n_lsGsuhSqGuWdb",
+    password: `${process.env.AIVEN_KEY}`,
     // database: "defaultdb"
     database: "smpru"
 });
@@ -40,6 +40,26 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 
 dotenv.config();
+
+app.get('/test', (req, res) => {
+    res.status(200).json({
+        message: "Halooooo halo halo halo",
+    });
+});
+
+app.get('/test2', (req, res) => {
+    console.log("Halo test2!!");
+    con.query("SELECT * FROM menu", (err, rows) => {
+        if (err) {
+            console.log(err);
+            res.sendStatus(500);
+        }
+        if (rows) {
+            //if(tableToView == 14) console.log(rows);
+            res.status(200).json(rows);
+        }
+    });
+});
 
 function generateAccessToken(identifier) {
     return jwt.sign(identifier, `${process.env.TOKEN_SECRET}`, { expiresIn: '86400s' });
@@ -183,11 +203,7 @@ app.get('/testlogin',  authenticateToken, (req, res) => {
     });
 });
 
-app.get('/test', (req, res) => {
-    res.status(200).json({
-        message: "Halooooo halo halo halo",
-    });
-});
+
 
 app.get('/viewtable', (req, res) => {
 
