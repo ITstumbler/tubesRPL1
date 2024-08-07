@@ -36,7 +36,7 @@ import WaiterOrderStatus from "./waiter_order_status.js";
 import Forbidden from "./forbidden.js";
 // import reportWebVitals from './reportWebVitals';
 
-const backendUrl = "https://tubes-rpl-1-109-node.com";
+const backendUrl = "https://tubesrpl1.onrender.com";
 export { backendUrl };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
