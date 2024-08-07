@@ -139,23 +139,23 @@ app.post('/login', (req, res) => {
                 // console.log(rows[0].id_kasir);
                 let roleName = "";
                 let redirectTarget = "";
-                if(rows[0].status == "ADMINISTRATOR") {
-                    roleName = "administrator";
-                    redirectTarget = "admin_homepage";
-                }
-                else if(rows[0].id_pelayan != null) {
-                    roleName = "pelayan";
-                    redirectTarget = "waiter_order";
-                }
-                else if(rows[0].id_koki != null) {
-                    roleName = "koki";
-                    redirectTarget = "chef_homepage";
-                }
-                else if(rows[0].id_kasir != null) {
-                    roleName = "kasir";
-                    redirectTarget = "cashier_order_list";
-                }
                 if(rows[0]) {
+                    if(rows[0].status == "ADMINISTRATOR") {
+                        roleName = "administrator";
+                        redirectTarget = "admin_homepage";
+                    }
+                    else if(rows[0].id_pelayan != null) {
+                        roleName = "pelayan";
+                        redirectTarget = "waiter_order";
+                    }
+                    else if(rows[0].id_koki != null) {
+                        roleName = "koki";
+                        redirectTarget = "chef_homepage";
+                    }
+                    else if(rows[0].id_kasir != null) {
+                        roleName = "kasir";
+                        redirectTarget = "cashier_order_list";
+                    }
                     if(hashedPassword == rows[0].password ) {
                         const token = generateAccessToken({ identifier: userdata.email });
                         res.status(200).json({
