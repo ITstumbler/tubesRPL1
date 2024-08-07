@@ -9,6 +9,7 @@ const app = express();
 const cors = require('cors');
 const port = 8082;
 const mysql = require('mysql');
+const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
@@ -22,10 +23,14 @@ app.use(cors());
 const con = mysql.createConnection({
     host: "mysql-tubes-rpl-1-109-tubes-rpl-1-109.j.aivencloud.com",
     port: "11713",
-    user: "avnadmin",
-    password: `${process.env.AIVEN_KEY}`,
+    user: "smpru_admin",
+    password: `${process.env.AIVEN_KEY_2}`,
     // database: "defaultdb"
-    database: "smpru"
+    database: "smpru",
+    ssl: {
+        ca: fs.readFileSync(__dirname + '/ca.pem')
+    },
+    debug: false
 });
 
 app.use(multer().array());
