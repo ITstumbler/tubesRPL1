@@ -20,10 +20,11 @@ let userdata = {};
 app.use(cors());
 
 const con = mysql.createConnection({
-    host: "localhost",
-    port: "3307",
-    user: "smpru_user",
-    password: "password_untuk_smpru",
+    host: "mysql-tubes-rpl-1-109-tubes-rpl-1-109.j.aivencloud.com",
+    port: "11713",
+    user: "avnadmin",
+    password: "AVNS_gGJ6n_lsGsuhSqGuWdb",
+    // database: "defaultdb"
     database: "smpru"
 });
 
@@ -179,6 +180,12 @@ app.get('/testlogin',  authenticateToken, (req, res) => {
     res.status(200).json({
         message: "Login dengan token sukses.",
         userid: req.userid
+    });
+});
+
+app.get('/test', (req, res) => {
+    res.status(200).json({
+        message: "Halooooo halo halo halo",
     });
 });
 
