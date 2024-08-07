@@ -1,0 +1,559 @@
+@font-face {
+    font-family:"TF2 Build";
+    src:url(tf2build.8181851a.woff2)
+    format("woff2"),
+    url(tf2build.34d0e9f4.woff)
+    format("woff");
+    font-display:swap
+}
+@font-face {
+    font-family:"TF2 Secondary";
+    src:url(tf2secondary.4bdc448e.woff2)
+    format("woff2"),
+    url(tf2secondary.9f3541ce.woff)
+    format("woff");
+    font-display:swap
+}
+a {
+    text-decoration: none;
+}
+.red_text {
+    color: #DD0000;
+}
+body {
+    background-color: #383530;
+    text-align: center;
+}
+.loginbox {
+    width: 330px;
+    margin: auto;
+    padding: 8px 10px;
+    border-radius: 16px;
+    border: 4px solid #554d4a;
+    background-color: #292526;
+}
+.headertext {
+    font-family: TF2 Build;
+    font-size: 32px;
+    width: 100%;
+    color: #fbf1d7;
+}
+.subtextnoaccount {
+    font-family: TF2 Secondary;
+    font-size: 20px;
+    color: #fbf1d7;
+    position: relative;
+    top: 24px;
+}
+.subtextlogin {
+    font-family: TF2 Secondary;
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    color: #5e98d9;
+}
+.statusmessagegreen {
+    font-family: TF2 Secondary;
+    font-size: 20px;
+    color: #1aff00;
+}
+.statusmessagered {
+    font-family: TF2 Secondary;
+    font-size: 20px;
+    color: #da0000;
+}
+.disclaimer {
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    font-family: TF2 Secondary;
+    color: #fbf1d7;
+}
+.secondarytext {
+    font-family: TF2 Secondary;
+    font-size: 20px;
+    color: #fbf1d7;
+}
+.usernameinput {
+    font-family: TF2 Secondary;
+    color: #fbf1d7;
+    background-color: #332f2e;
+    border-radius: 4px;
+    font-size: 24px;
+    width: 310px;
+    height: 48px;
+    border: 4px solid #554d4a;
+}
+.passwordinput {
+    font-family: TF2 Secondary;
+    color: #fbf1d7;
+    background-color: #332f2e;
+    border-radius: 4px;
+    font-size: 24px;
+    width: 310px;
+    height: 48px;
+    border: 4px solid #554d4a;
+    position: relative;
+    margin-top: 4px;
+}
+.userpassinput:focus {
+    outline:1px solid #FFFFFF;
+}
+.tf2button {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 192px;
+    height: 48px;
+    color: #fbf1d7;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+}
+.tf2button:hover {
+    background-color: #91493b;
+}
+.tf2buttondisabled {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 192px;
+    height: 48px;
+    color: #302c29;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    pointer-events: none;
+}
+.centeredtd {
+    text-align: center;
+}
+.navigationtable {
+    width: 97.5%;
+    font-size: 16px;
+    margin: auto;
+    padding: 8px 0px 8px 0px;
+
+    border-radius: 16px;
+    border: 2px solid #eeebca;
+    background-color: #292526;
+    border-spacing: 0;
+    overflow: hidden;
+    border-collapse: separate;
+}
+.kitstable {
+    width: 97.5%;
+    font-size: 16px;
+    margin: auto;
+
+    border-radius: 16px;
+    border: 2px solid #eeebca;
+    background-color: #292526;
+    border-spacing: 0;
+    overflow: hidden;
+    border-collapse: separate;
+}
+.kitstable th {
+    background-color: #2b2724;
+    font-family: TF2 Build;
+    font-size: 16px;
+    color: #c74c3c;
+}
+.kitstable tr:nth-child(odd) td {
+    background-color: #34302d;
+    font-family: TF2 Secondary;
+    color: #fbf1d7;
+}
+.kitstable tr:nth-child(even) td {
+    background-color: #2e2b24;
+    font-family: TF2 Secondary;
+    color: #fbf1d7;
+}
+.kitstable tr td:first-child {
+    font-family: TF2 Build;
+    color: #fcda00;
+}
+.menucontainer {
+    width: 97.5%;
+    position:fixed;
+    height: 57.5%;
+    overflow: scroll;
+    border-radius: 16px;
+    border: 2px solid #eeebca;
+}
+.menutable {
+    width: 100%;
+    font-size: 24px;
+    margin: auto;
+    /* border-radius: 16px;
+    border: 2px solid #eeebca; */
+    background-color: #292526;
+    border-spacing: 0;
+    border-collapse: separate;
+    
+}
+.fixedheaders {
+    position: fixed;
+}
+
+.nomormejacontainer {
+    font-family: TF2 Secondary;
+    font-size:32px;
+    color: #fbf1d7;
+    position:absolute;
+    top:70%;
+    left:100px;
+}
+
+.nomormejacontainer tr td {
+    padding: 6px;
+    text-align: left;
+}
+
+.totalpricecontainer {
+    font-family: TF2 Secondary;
+    font-size:32px;
+    color: #fbf1d7;
+    position:absolute;
+    top:72%;
+    left:72%;
+}
+
+.totalpricecontainer tr td {
+    padding: 6px;
+    text-align: left;
+}
+
+.orderdetailscontainer {
+    font-family: TF2 Secondary;
+    font-size:20px;
+    color: #fbf1d7;
+    position:absolute;
+    top:71%;
+    right:3%;
+}
+
+.orderdetailscontainer tr td {
+    padding:5px;
+    text-align: right;
+}
+
+.menutable th {
+    background-color: #2b2724;
+    font-family: TF2 Build;
+    font-size: 16px;
+    color: #c74c3c;
+}
+.menutable tr:nth-child(odd) td {
+    background-color: #34302d;
+    font-family: TF2 Secondary;
+    color: #fbf1d7;
+}
+.menutable tr:nth-child(even) td {
+    background-color: #2e2b24;
+    font-family: TF2 Secondary;
+    color: #fbf1d7;
+}
+.menutable tr td:first-child {
+    font-family: TF2 Build;
+    color: #fcda00;
+}
+.menutable tr td:last-child {
+    font-family: TF2 Build;
+    font-size:40px;
+}
+.changedatabutton {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 6px;
+    width:140px;
+    padding: 4px;
+    font-size: 16px;
+    color: #fbf1d7;
+    line-height: 12px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+.changedatabutton:hover {
+    background-color: #91493b;
+}
+.changedatabuttondisabled {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 6px;
+    width:140px;
+    padding: 4px;
+    font-size: 16px;
+    color: #302c29;
+    line-height: 12px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+.plusminusbutton {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 6px;
+    width:40px;
+    height:40px;
+    padding: 4px;
+    font-size: 32px;
+    margin-left:8px;
+    margin-right:8px;
+    color: #fbf1d7;
+    line-height: 12px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+.plusminusbuttondisabled {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 6px;
+    width:40px;
+    height:40px;
+    padding: 4px;
+    font-size: 32px;
+    margin-left:8px;
+    margin-right:8px;
+    color: #302c29;
+    line-height: 12px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+.plusminusbutton:hover {
+    background-color: #91493b;
+}
+.tf2buttonsmall {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 6px;
+    width:60px;
+    padding: 4px;
+    font-size: 16px;
+    color: #fbf1d7;
+    line-height: 12px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+.tf2buttonsmall:hover {
+    background-color: #91493b;
+}
+.tf2buttonsmalldisabled {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 6px;
+    width:60px;
+    padding: 4px;
+    font-size: 16px;
+    color: #302c29;
+    line-height: 12px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    pointer-events: none;
+}
+.submitkittable {
+    text-align: left;
+    width: 512px;
+    font-size: 16px;
+    margin: auto;
+    
+    font-family: TF2 Build;
+    color: #c74c3c;
+    border-radius: 16px;
+    border: 2px solid #eeebca;
+
+    border-spacing: 0;
+    overflow: hidden;
+    border-collapse: separate;
+}
+.submitkittable tr:nth-child(odd) td {
+    background-color: #34302d;
+    padding: 1px 0 1px 10px;
+}
+.submitkittable tr:nth-child(even) td {
+    background-color: #2e2b24;
+    padding: 1px 0 1px 10px;
+}
+.submitkittable tr td:last-child {
+    color: #fcda00;
+    text-align: right;
+    padding: 1px 10px 1px 10px;
+}
+.submitkittable tr:last-child {
+    text-align: center;
+    height: 75px;
+}
+.submitkittable tr:last-child td {
+    padding: 6px 10px 10px 10px;
+}
+.submitkitbutton {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 192px;
+    height: 48px;
+    color: #fbf1d7;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+.submitkitbutton:hover {
+    background-color: #91493b;
+}
+.navigationbutton {
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 320px;
+    height: 48px;
+    color: #fbf1d7;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+.navigationbutton:hover {
+    background-color: #91493b;
+}
+.submitkitinput {
+    background-color: #000000;
+    font-size: 16px;
+    color: #fbf1d7;
+    font-family: TF2 Secondary;
+    border-radius: 1px;
+    width: 300px;
+    border: 2px solid #eeebca;
+}
+.submitkitinputprice {
+    background-color: #000000;
+    font-size: 16px;
+    color: #fcda00;
+    font-family: TF2 Build;
+    border-radius: 1px;
+    width: 270px;
+    border: 2px solid #eeebca;
+}
+.toprightnavbutton {
+    position: absolute;
+    right: 16px;
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 320px;
+    height: 48px;
+    color: #fbf1d7;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+.toprightnavbutton:hover {
+    background-color: #91493b;
+}
+.topleftnavbutton {
+    position: absolute;
+    left: 16px;
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 320px;
+    height: 48px;
+    color: #fbf1d7;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+.topleftnavbutton:hover {
+    background-color: #91493b;
+}
+.bottomrightnavbutton {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 300px;
+    height: 48px;
+    color: #fbf1d7;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+.bottomrightnavbutton:hover {
+    background-color: #91493b;
+}
+.bottomrightnavbuttondisabled {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    text-align: center;
+    font-family: TF2 Build;
+    background-color: #776b5f;
+    border-radius: 12px;
+    font-size: 32px;
+    width: 300px;
+    height: 48px;
+    color: #302c29;
+    line-height: 48px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+.orderCount {
+    width: 48px;
+    display: inline;
+}
