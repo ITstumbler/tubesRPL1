@@ -30,7 +30,7 @@ function CashierOrderDetails() {
         .then(jsondata => {
             setOrderDetails(jsondata);
         });
-    });
+    }, [orderDetails, location]);
 
     // useEffect(() => {
     //     let tempPrice = 0;
